@@ -1,0 +1,3 @@
+event.to_hash.keys.each { |k| event[ k.gsub('.','_') ] = event.remove(k) if k.include?'.' }
+
+sudo df /dev/sda1
